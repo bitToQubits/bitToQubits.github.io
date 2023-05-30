@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #7775;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background-color: #5555;
+  }
+  
+  html::-webkit-scrollbar-track:hover {
+    background-color: #5554;
+  }
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10000;
+}
+.logo{
+    width: 20vw;
+    height: 7vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    padding-left: 40px;
+    line-height: 1.3rem;
+}
+.logo img{
+    height: 40px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 200px;
+    height: 7vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 30px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+
+#btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+*{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(img/background2.jpg)fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins';
+}
+
+.inicio{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+
+
+.img-hero {
+    padding-top: 50px;
+    width: 55%;
+    margin: auto;
+}
+
+/* Section 1 */
+.section1{
+    border: 1px solid transparent;
+    background-color: #272727;
+    display: flex;
+    padding-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    border-radius: 1%;
+    
+}
+
+.title-img{
+    max-width: 500px;
+}
+
+.texto1{
+    padding-top: 50px;
+}
+
+.img-text{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.texto1 img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto1 p{
+    text-align: justify;
+    font-size: 20px;
+    width: 800px;
+} 
+
+
+
+.gif img{
+    width: 600px;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.section1::after {
+    filter: brightness(1.4);
+    filter: drop-shadow(16px 16px 20px rgba(248, 220, 97));
+    filter: blur(15px);
+}
+.texto2 p{
+
+    font-size: 20px;
+    width: 1100px;
+    padding-left: 15px;
+} 
+
+.texto2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto2 img{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.imagen-arcade img{
+    width: 410px;
+    float: right;
+    filter: drop-shadow(20px 20px 20px rgb(90, 90, 255));
+}
+
+
+
+
+
+.section2{
+    background-color: #272727;
+    padding-bottom: 70px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+
+/* Person */
+.texto3 p{
+    text-align: justify;
+    font-size: 21px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 5px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-image: linear-gradient(120deg, #ff1e00, #0b0966, #e6e204, #131A8C, #133802, #ff8a04)1;
+} 
+
+.texto3{
+    display: flex;
+    justify-content: center;
+}
+
+.texto3 img{
+    width: 1000px;
+    border: 5px solid;
+    border-image: linear-gradient(120deg, #ff1e00, #0b0966, #e6e204, #131A8C, #133802, #ff8a04)1;
+    padding: 20px;
+    
+}
+
+.section3{
+    background-color: #272727;
+    padding-bottom: 70px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+}
+
+.img-control img{
+    width: 550px;
+    
+}
+
+.img-control{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.persons{
+    display: flex;
+    gap: 25px ;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.person1{
+    width: 100px;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.text-person{
+    width: 180px;
+    margin: auto;
+}
+
+
+
+
+/*  Equipo*/
+
+.div{
+    display: flex;
+    justify-content: center;
+}
+
+.equi-img{
+    max-width: 250px;
+    margin: auto;
+}
+
+#equipo{
+    max-width: 1300px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    gap: 50px;
+    
+    
+}
+
+.card .image-box {
+    height: 300px;
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    object-position: top;
+  }
+  .card .profile-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 15px;
+    
+  }
+  .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .profile-details .name {
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+  .profile-details .job {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1ad45;
+    text-align: center;
+    line-height: 8px;
+  }
+
+.card{
+    height: 375px;
+    width: 300px;
+    background-color: #01010e;
+    border-radius: 20px;
+}

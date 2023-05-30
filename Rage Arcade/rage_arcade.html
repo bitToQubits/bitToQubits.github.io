@@ -1,0 +1,450 @@
+    <!DOCTYPE HTML>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        @font-face {
+            font-family: Press Start;
+            src: url('assets/fonts/PressStart2P-Regular.ttf');
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+        html{
+    scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #7775;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background-color: #5555;
+  }
+  
+  html::-webkit-scrollbar-track:hover {
+    background-color: #5554;
+  }
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10000;
+}
+.logo{
+    width: 20vw;
+    height: 7vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    padding-left: 40px;
+    line-height: 1.3rem;
+}
+.logo img{
+    height: 40px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 200px;
+    height: 7vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 30px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+
+#btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+        .background {
+            background-image: url('assets/ciudadfondo.gif');
+            height: 100vh;
+            background-size: cover;
+            padding-top: 6em;
+        }
+
+        .contenedor {
+            background: rgba(0,0,0,0.75);
+            padding: 20px;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid red;
+        }
+
+        .bg-red {
+            background: rgb(192,38,86);
+            padding: 14px;
+            margin: 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            color: white;
+            width: 200px;
+            box-shadow: 2px 2px 5px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+            .bg-red > p {
+                line-height: 0.7;
+                text-shadow: 2px 2px black;
+            }
+
+        .secondary-title {
+            margin-top: 0.2em;
+            font-size: 4em;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        }
+
+        .title {
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+            font-size: 4.5em;
+            text-shadow: 2px 2px 5px red;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            line-height: 0.6;
+        }
+
+        .intro-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-red {
+            color: #f0395b;
+            text-shadow: 2px 2px 5px #f0395b;
+        }
+
+        hr.neon-hr {
+            border: 2px solid white;
+            border-radius: 5px;
+            width: 400px;
+            margin: auto;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .center {
+            margin-top: 10em;
+        }
+
+        .hero {
+            margin-top: 5em;
+        }
+
+            .hero > p {
+                font-size: 1.3em;
+            }
+
+            .hero > h1 {
+                font-size: 5em;
+                padding-bottom: 0.5em;
+            }
+
+        .center > p {
+            text-align: justify;
+            font-size: 1.3em;
+        }
+
+        .text-green {
+            color: #C0C741;
+            text-shadow: 2px 2px 5px #C0C741;
+        }
+
+        .text-blue {
+            color: #0386F6;
+            text-shadow: 2px 2px 5px #0386F6;
+        }
+
+        .to-right {
+            margin-right: 7em;
+        }
+
+        .text-white {
+            color: aliceblue;
+            text-shadow: 2px 2px 5px aliceblue;
+        }
+
+        .padding-5 {
+            padding-left: 3em;
+            padding-right: 3em;
+            padding-bottom: 10em;
+        }
+
+        .row {
+            border-top: 1px solid red;
+        }
+
+        .text-brown {
+            color: #593E21;
+            text-shadow: 2px 2px 5px #593E21;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .ranita {
+                margin-left: 7em;
+                margin-top: 1em;
+                border: 2px solid #C0C741;
+            }
+
+            .card-img-top {
+                height: 245px;
+                object-fit: cover;
+            }
+        }
+
+        .donkey {
+            width: 400px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .tempest {
+                width: 400px;
+                margin-top: 6em;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+
+        .card {
+            border: 1px solid #0d6efd;
+        }
+
+        @media screen and (min-width: 768px) {
+            .zoom-efecto:hover {
+                filter: opacity(0.9);
+                transform: scale(1.050) !important;
+                transition: 0.5s;
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            font-family: 'Press Start';
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #d4283e;
+            letter-spacing: 10px;
+            font-family: 'Press Start';
+            text-shadow: 4px 4px #104b62;
+        }
+        p{
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <img src="/Oasis/images/Oasis sin arcade.png" alt="">
+        </div>
+        <ul class="navbar">
+            <li><a href="/Oasis/index.html">Home</a></li>
+            <li><a href="#">Arcade</a></li>
+            <li><a href="#">Games</a></li>
+
+        </ul>
+        <button type="button" id="btn"><i class="fas fa-play"></i><a href="">PLAY NOW</a></button>
+    </header>
+    
+    <div class="background">
+        <div class="container contenedor">
+            <!--div class="intro-section">
+        <div class="bg-red"
+            <p>Press X to Start</p>
+            <i class="bi bi-dpad-fill text-dark"></i>
+        </div>
+    </div>-->
+            
+            <h1 class="secondary-title">Rage</h1>
+            <h1 class="title text-red">Arcade</h1>
+            <hr class="neon-hr" />
+            <hr class="neon-hr" />
+            <hr class="neon-hr" />
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row bg-dark padding-5">
+            <!--<div class="col-md-12 hero text-center">
+        <h1 class="text-brown">Rage</h1>
+        <p class="text-white">
+            Paraguay. 1986. Un grupo de amigos adolescentes deciden ir a divertirse en el cementerio mientras esperan a Manuel, uno de sus amigos, quien trabaja en una morgue. Emborrachados, encuentran un libro maldito de conjuros en una tumba abandonada. Uno de ellos lo lee en voz alta, desatando un antiguo mal: Teju Jagu�, la bestia de siete cabezas, ahora est� libre y busca venganza. Los amigos son brutalmente asesinados y Manuel, quien ha estado trabajando en la morgue todo este tiempo, es el �nico sobreviviente. Para escapar, tendr� que luchar contra Teju Jagu� y sus criaturas malditas mientras navega a trav�s de un oscuro y peligroso cementerio.
+        </p>
+    </div>
+            <div class="col-md-12">
+                <center>
+                    <img src="assets/rage.gif" width="500" />
+                </center>
+            </div>-->
+            <div class="col-md-6 desktop mt-5">
+                <img src="assets/dk.png" width="500" class="donkey zoom-efecto" />
+            </div>
+            <div class="col-md-6 center">
+                <h1 class="text-red pb-4">Donkey Kong</h1>
+                <p class="text-white">Donkey Kong es un juego de arcade creado por Nintendo en 1981. Es un juego de plataformas donde el jugador debe controlar a Mario a trav�s de una serie de niveles en los que debe evitar obst�culos y enemigos para rescatar a Pauline, su novia, de las garras de Donkey Kong.</p>
+            </div>
+            <div class="col-md-6 center pt-5">
+                <h1 class="text-green pb-4">Explon't</h1>
+                <p class="text-white">Eres mini-Godzilla. Trata de no enfadarte y explotar.</p>
+            </div>
+            <div class="col-md-6 pt-5">
+                <img src="assets/explont.gif" width="400" class="ranita img-fluid zoom-efecto" />
+            </div>
+            <div class="col-md-6 pt-5">
+                <img src="assets/tempest.png" class="tempest zoom-efecto" />
+            </div>
+            <div class="col-md-6 center pt-5">
+                <h1 class="text-white pb-4">Tempest Run</h1>
+                <p class="text-white">
+                    Un cruce entre Tempest (1981) y Temple Run (2011), "Tempest Run" le da un nuevo giro a esos juegos ic�nicos y se hizo para el Pygame Community Summer Jam 2021, cuyo tema fue "Recrear un juego antiguo con un giro". Salta sobre picos, desl�zate a trav�s de enemigos y evita las paredes en este interminable corredor 3D. Mira hasta d�nde puedes llegar en el interminable agujero de gusano.
+                </p>
+            </div>
+            <div class="col-md-12 p-5 text-center mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#0D6EFD" class="bi bi-people" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                </svg>
+                <h1 class="text-primary text-center mb-4 mt-4">Personal del Arcade</h1>
+                <p class="text-white">
+                    Somos una empresa multidisciplinaria que se enfoca en la contrataci�n de profesionales apasionados, creativos y din�micos en el �rea inform�tica.
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="card bg-dark text-white zoom-efecto">
+                    <img class="card-img-top" src="assets/Jorge.jpeg" alt="Card image">
+                    <div class="card-body" style="min-height: 120px;">
+                        <h4 class="card-title">Jorge B�ez</h4>
+                        <p class="card-text">Desarrollador, T�cnico de software.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 zoom-efecto">
+                <div class="card bg-dark text-white">
+                    <img class="card-img-top" src="assets/Angel.jpg" alt="Card image">
+                    <div class="card-body" style="min-height: 120px;">
+                        <h4 class="card-title">�ngel</h4>
+                        <p class="card-text">Agente Financiero, Game Tester.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 zoom-efecto">
+                <div class="card bg-dark text-white" style="min-width: 200px;">
+                    <img class="card-img-top" src="assets/juanpa.jpg" alt="Card image">
+                    <div class="card-body" style="min-height: 120px;">
+                        <h4 class="card-title">Juan Pablo</h4>
+                        <p class="card-text">Planificador de negocios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 zoom-efecto">
+                <div class="card bg-dark text-white" style="min-width: 200px;">
+                    <img class="card-img-top" src="assets/Isabella Monique.jpeg" alt="Card image">
+                    <div class="card-body" style="min-height: 120px;">
+                        <h4 class="card-title">Isabella Monique</h4>
+                        <p class="card-text">Contable, T�cnica de Hardware.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 p-5 text-center mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#DC3545" class="bi bi-nut-fill" viewBox="0 0 16 16">
+                    <path d="M4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1H4.58zm5.018 9.696a3 3 0 1 1-3-5.196 3 3 0 0 1 3 5.196z" />
+                </svg>
+                <h1 class="text-danger mb-4 mt-4">Proceso de creaci�n</h1>
+                <p class="text-white">
+                    Se debe conocer el Proceso de Desarrollo de una empresa, para comprender mejor su funcionamiento, y en particular como se atienden sus necesidades. Asi mismo, publicamos nuestros procesos internos para establecer una relaci�n m�s estrecha y de confianza con nuestros clientes.
+                </p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <img src="assets/cortando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/plasmando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/JorgeLuis.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <img src="assets/cortando_2.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/recortando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/cuadrando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/selfie.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <img src="assets/grupal.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/construyendo.gif" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+                <img src="assets/juanpa.gif" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded zoom-efecto">
+            </div>
+        </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

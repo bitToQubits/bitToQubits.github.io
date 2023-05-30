@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Textos;
+    src: url(img/ChakraPetch-Light.ttf);
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url(img/BrunoAce-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+    scroll-behavior: smooth;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: #7775;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background-color: #5555;
+  }
+  
+  html::-webkit-scrollbar-track:hover {
+    background-color: #5554;
+  }
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10000;
+}
+.logo{
+    width: 20vw;
+    height: 7vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    padding-left: 40px;
+    line-height: 1.3rem;
+}
+.logo img{
+    height: 40px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 200px;
+    height: 7vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 30px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+
+#btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    position: fixed;
+}
+
+.inicio .container {
+    text-align: center;
+}
+    
+.inicio .container img {
+    padding-top: 100px;
+    width: 650px;
+}    
+    
+.inicio .container p {
+    color: white;
+    font-family: Textos;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 60px;
+    font-size: 20px;
+    padding-bottom: 300px;
+}
+
+.sinopsis .container {
+    padding-bottom: 300px;
+    text-align: center;
+}
+
+.sinopsis .container .box {
+    color: white;
+    width: 600px;
+    padding-left: 450px;
+}
+
+.sinopsis .container .box h1 {
+    font-family: Titulos;
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.sinopsis .container .box p {
+    font-family: Textos;    
+    font-size: 20px;
+    text-align: center;
+}
+
+.sinopsis .container .enemy img {
+    float: left;
+    width: 100px;
+    rotate: 350deg;
+    margin-top: -350px;
+}
+
+.sinopsis .container .enemy2 img {
+    float: left;
+    width: 130px;
+    rotate: 20deg;
+    margin-left: 150px;
+    margin-top: -100px;
+}
+
+.sinopsis .container .player img {
+    float: right;
+    width: 150px;   
+    rotate: 350deg;
+    margin-right: 150px;
+    margin-top: -150px;
+}
+
+.sinopsis .container .player .bullet {
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    float: right;
+    rotate: 350deg;
+    margin-right: 240px;
+    margin-top: -230px;
+}
+
+.sinopsis .container .player .bullet2 {
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    float: right;
+    rotate: 350deg;
+    margin-right: 265px;
+    margin-top: -350px;
+}
+
+.jugabilidad .container {
+    text-align: center;
+}
+
+.jugabilidad .container h1 {
+    text-align: center;
+    font-family: Titulos;
+    font-size: 60px;
+    color: white;
+}
+
+.jugabilidad .container img {
+    float: right;
+    padding-right: 150px;
+    padding-left: 120px;
+    width: 420px;
+}
+
+.jugabilidad .container p {
+    color: white;
+    font-family: Textos;
+    padding-left: 280px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    font-size: 20px;
+}
+
+.realización .container {
+    padding-bottom: 300px;
+}
+
+.realización .container h1 {
+    font-family: Titulos;
+    font-size: 50px;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.realización .container .people {
+    display: flex;
+    float: left;
+}
+
+.realización .container .people .people1 img {
+    width: 350px;
+    z-index: -1;
+    position: absolute;   
+    padding-left: 160px;  
+}
+
+.realización .container .people .people2 img {
+    width: 350px;
+    z-index: 99;
+    padding-left: 460px;
+    padding-top: 160px;
+}
+
+.realización .container .game1 img {
+    width: 400px;
+    padding-left: 100px;
+    padding-top: 60px;
+}
+
+.creators .container {
+    text-align: center;
+    margin-bottom: 200px
+}
+
+.creators .container h1 {
+    font-family: Titulos;
+    font-size: 50px;
+    color: white;
+    padding: 60px;
+}
+
+.creators .container .people {
+    display: flex;
+    text-align: center;
+    padding-left: 130px;
+}
+
+.creators .container .people img {
+    width: 210px;
+    height: 300px;
+}
+
+.creators .container .people .person1 {
+    margin: 50px 50px 0px 50px;
+}
+
+.creators .container .people .person1 h3 {
+    padding-top: 15px;
+    color: white;
+    font-family: Titulos;
+}
+
+.creators .container .people .person2 {
+    margin: 50px 50px 0px 50px;
+}
+
+.creators .container .people .person2 h3 {
+    padding-top: 15px;
+    color: white;
+    font-family: Titulos;
+}
+
+.creators .container .people .person3 {
+    margin: 50px 50px 0px 50px;
+}
+
+.creators .container .people .person3 h3 {
+    padding-top: 15px;
+    color: white;
+    font-family: Titulos;
+}
+
+.creators .container .people .person4 {
+    margin: 50px 50px 0px 50px;
+}
+
+.creators .container .people .person4 h3 {
+    padding-top: 15px;
+    color: white;
+    font-family: Titulos;
+}
