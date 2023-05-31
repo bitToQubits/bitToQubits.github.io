@@ -8,7 +8,6 @@
 body{
     background: #1a0327;
     font-family: 'Poppins', sans-serif;
-    height: 350vh;
 }
 
 html{
@@ -773,3 +772,70 @@ ul li a:hover{
     font-weight: bold;
 }
 
+/*Responsive*/
+@media (max-width: 900px) {
+  .content-wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .rakuto{
+    left: 0;
+    bottom: 40px;
+  }
+  .rakuto::after{
+    width: 300px;
+    height: 300px;
+    left: 50px;
+  }
+
+  .content-wrapper p{
+    width: 350px;
+    height: 128px;
+  }
+
+  .logo-section{
+    margin: 100px 0 80px 30px;
+  }
+
+  .section-3{
+    height: auto;
+  }
+
+  .section-3 h1{
+    padding: 40px;
+  }
+
+  .section-3-wrapper{
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .feedback{
+    width: 300px;
+  }
+
+  .feedback-desc{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-body {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  footer{
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+  }
+
+  .footer-bottom{
+    text-align: center;
+  }
+}
