@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="container" id="home">
-        <header> 
+        <header class="header-1"> 
             <div class="logo">
                 <img src="images/Oasis sin arcade.png" alt="">
             </div>
@@ -27,7 +27,37 @@
 
             </ul>
             <button type="button" id="btn"><i class="fas fa-play"></i><a href="#contact">PLAY NOW</a></button>
-        </header>
+            </header>
+
+            <header class="header-2">
+
+              <div class="header-left">
+                  <div class="logo-2">
+                      <img src="images/Oasis sin arcade.png" alt="">
+                  </div>
+                  <nav>
+                      <ul>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="header-right">
+                  <div class="hamburger">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                  </div>
+              </div>
+          </header>
+          <script>
+              hamburger = document.querySelector(".hamburger");
+              nav = document.querySelector("nav");
+              hamburger.onclick = function() {
+                  nav.classList.toggle("active");
+              }
+          </script>
 
         <div class="content-wrapper">
             <div class="content-desc">

@@ -42,16 +42,15 @@ html {
   }
 
 
-.container{
+  .container{
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
 }
-header{
+.header-1{
     width: 100%;
     height: 7vh;
     background:rgba(0,0,0,0.5);
@@ -75,22 +74,22 @@ header{
 .logo img{
     height: 40px;
 }
-ul.navbar{
+.header-1 ul.navbar{
     display: flex;
     list-style: none;
 }
-ul.navbar li{
+.header-1 ul.navbar li{
     width: 120px;
 }
-ul.navbar li a{
+.header-1 ul.navbar li a{
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
-ul.navbar li a.active{
+.header-1 ul.navbar li a.active{
     color: #FEC53A;
 }
-ul.navbar li a:hover:not(.active){
+.header-1 ul.navbar li a:hover:not(.active){
     color: #FEC53A;
 }
 #btn{
@@ -113,6 +112,100 @@ ul.navbar li a:hover:not(.active){
 #btn a{
     text-decoration: none;
     color: #000;
+}
+
+/*responsive nav*/
+.logo-2 img {
+  width: 100%;
+}
+.header-2 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: #550381;
+  opacity: 0;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left .logo {
+  width: 140px;
+}
+.header-left nav {
+  margin-left: 50px;
+}
+.header-left nav ul {
+  display: flex;
+}
+.header-left nav ul li a {
+  display: block;
+  color: #cfd9e0;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+.header-2 nav ul li a:hover,
+.header-2 nav ul li a.active {
+  color: #fff;
+}
+.header-2 nav .login-signup {
+  display: none;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .hamburger {
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+.header-right .hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
+}
+@media (max-width: 900px) {
+  .header-1{
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .logo-2 img{
+    width: 100px;
+  }
+
+  .header-2 {
+      opacity: 1;
+      padding: 0 20px;
+  }
+  .header-2 .header-right .hamburger {
+      display: block;
+  }
+  .header-2 .header-left nav {
+      margin: 0;
+      position: absolute;
+      top: -400px;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      background-color: #550381;
+      padding: 30px;
+      transition: 0.3s;
+      text-align: center;
+      z-index: 10;
+  }
+  .header-2 .header-left nav.active {
+      top: 70px;
+  }
+  .header-2 .header-left nav ul {
+      display: block;
+  }
 }
 
         .background {
@@ -310,18 +403,49 @@ ul.navbar li a:hover:not(.active){
     </style>
 </head>
 <body>
-    <header> 
+    <header class="header-1"> 
         <div class="logo">
             <img src="/Oasis/images/Oasis sin arcade.png" alt="">
         </div>
         <ul class="navbar">
             <li><a href="/Oasis/index.html">Home</a></li>
-            <li><a href="#">Arcade</a></li>
-            <li><a href="#">Games</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
 
         </ul>
-        <button type="button" id="btn"><i class="fas fa-play"></i><a href="">PLAY NOW</a></button>
-    </header>
+        <button type="button" id="btn"><i class="fas fa-play"></i><a href="#contact">PLAY NOW</a></button>
+        </header>
+
+        <header class="header-2">
+
+          <div class="header-left">
+              <div class="logo-2">
+                  <img src="/Oasis/images/Oasis sin arcade.png" alt="">
+              </div>
+              <nav>
+                  <ul>
+                    <li><a class="active" href="/Oasis/index.html">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="header-right">
+              <div class="hamburger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+          </div>
+      </header>
+      <script>
+          hamburger = document.querySelector(".hamburger");
+          nav = document.querySelector("nav");
+          hamburger.onclick = function() {
+              nav.classList.toggle("active");
+          }
+      </script>
+
     
     <div class="background">
         <div class="container contenedor">
